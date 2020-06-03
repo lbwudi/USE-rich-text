@@ -1,0 +1,12 @@
+<page>
+
+  <view class="line" wx:for="{{loc}}" wx:for-index="idx"                             wx:for-item="itemName">
+    <view>{{idx}}: {{title[idx]}}</view>
+    <image src="{{loc[idx]}}"></image>
+  </view>
+
+  <view class="hidden_btn" bindtap="next">
+        回主页面
+  </view>
+
+</page>

@@ -1,0 +1,10 @@
+.line view{
+  margin: 3px auto;
+}
+
+.line{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto 30px;
+  background-color: red
+}

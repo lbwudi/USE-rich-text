@@ -1,0 +1,42 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "liu_pages/showPassage/showPassage",
+    "liu_pages/login/login",
+    "pages/ls/ls",
+    "liu_pages/edit/edit",
+    "pages/fj/fj"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的家乡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "/images/location.png",
+        "iconPath": "/images/location.png",
+        "pagePath": "pages/ls/ls",
+        "text": "历史"
+      },
+      {
+        "selectedIconPath": "/images/location.png",
+        "iconPath": "/images/location.png",
+        "pagePath": "pages/index/index",
+        "text": "封面"
+      },
+      {
+        "selectedIconPath": "/images/location.png",
+        "iconPath": "/images/location.png",
+        "pagePath": "pages/fj/fj",
+        "text": "风景"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

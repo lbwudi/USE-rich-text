@@ -1,0 +1,26 @@
+<!--liu_pages/prewatch/prewatch.wxml-->
+<view class="content">
+  <view class="line"  wx:for="{{datalist}}"
+wx:key="{{index}}" wx:for-item="data" >
+    <view class="line-content" catchtap="detail" id="{{index}}">
+        <image src="{{data['fileID']}}"></image> 
+        <view class="line-right">
+          <view class="subject">{{data['subject']}}</view>
+          
+        </view>
+        
+        <view class="line-foot">
+          <view class="pName">@作者：{{data['pName']}}</view>
+        </view>
+      </view>
+  </view>
+
+
+  <image id="edit" alt="编辑" src="{{edit}}" class="hidden_btn_index" bindtap="edit">
+      编辑
+  </image>
+
+<image id="home" alt="回主页" src="{{home}}" class="hidden_btn_index" bindtap="index">
+      回主页
+  </image>
+</view>

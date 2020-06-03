@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "发表文章",
+  "disableScroll": true,
+  "usingComponents": {
+    "custom-form-field": "../components/custom-form-field/custom-form-field"
+  }
+}

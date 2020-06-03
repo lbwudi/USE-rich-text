@@ -1,0 +1,43 @@
+<!--pages/ls/ls.wxml-->
+<view class="body">
+  <view class="content">
+  <swiper class="c1" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" 
+    duration="{{duration}}">
+    <block wx:for="{{loc}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+      
+    <view class="space"></view>
+    <view>
+        <view class="d_name">
+            <text>{{desc_1_name}}</text>
+        </view>
+        <view class="d_content">
+            <text>{{desc_1}}</text>
+        </view>
+    </view>
+<view class="space"></view>
+    <view>
+        <view class="d_name">
+            <text>{{desc_2_name}}</text>
+        </view>
+        <view class="d_content">
+            <text>{{desc_2}}</text>
+        </view>
+    </view>
+<view class="space"></view>
+    <view>
+        <view class="d_name">
+            <text>{{desc_3_name}}</text>
+        </view>
+        <view class="d_content">
+            <text>{{desc_3}}</text>
+        </view>
+    </view>
+    
+  </view>
+</view>

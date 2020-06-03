@@ -1,0 +1,13 @@
+
+<view style="{{w==null?'display:none':'display:inline'}}">
+    您所在地区风险较低
+  </view>
+<view class="line" wx:for="{{newslist}}" wx:for-index="idx"                             wx:for-item="itemName">
+  <view>{{idx}}</view>
+  <view>{{newslist[idx].address}}</view>
+  <view>{{newslist[idx].lat}}</view>
+  <view>{{newslist[idx].lng}}</view>
+  <view>{{newslist[idx].locale}}</view>
+  <view>{{newslist[idx].source}}</view>
+
+</view>

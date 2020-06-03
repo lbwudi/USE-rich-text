@@ -1,0 +1,43 @@
+<page>
+  <view id="body">
+    <image
+      src="{{music_img}}"
+      class="music"
+      bindtap="changeStateOfMusic">
+    </image>
+    <!-- <audio src="{{src}}" id="myAudio" controls loop></audio> -->
+    <view class="title">
+      <text>芮</text>
+      <text>城</text>
+    </view>
+    
+    <view class="body_head" bindtap="showitem">
+      <text>了解详情</text>
+    </view>
+
+    <navigator url="../../liu_pages/login/login">
+      <view class="{{open?'display_show':'display_none'}}">
+        圈子   
+      </view>
+    </navigator>
+
+    <navigator url="../xq/wz/wz">
+      <view class="{{open?'display_show':'display_none'}}">
+        位置   
+      </view>
+    </navigator>
+
+    <navigator url="../xq/jrsb/jrsb?word=山西">
+    <view class="{{open?'display_show':'display_none'}}">
+    今日时报
+    </view>
+    </navigator>
+
+    <navigator url="../xq/yq/yq">
+    <view class="{{open?'display_show':'display_none'}}">
+    疫情情况
+    </view>
+    </navigator>
+
+  </view>
+</page>  

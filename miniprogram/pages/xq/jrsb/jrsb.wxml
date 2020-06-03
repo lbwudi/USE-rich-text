@@ -1,0 +1,22 @@
+<view style="{{newslist!=null?'display:none':'display:inline'}}">
+    没有找到相关资讯
+</view>
+
+<view class="line" wx:for="{{newslist}}" wx:for-index="idx"                             wx:for-item="itemName">
+  <view id="bt">{{newslist[idx].title}}</view>
+  <view><text>发布时间：</text>{{newslist[idx].ctime}}</view>
+  <view><image src="{{newslist[idx].picUrl}}" alt="false"></image></view>
+  <view><navigator url="../wydd/wydd?loc='{{newslist[idx].url}}'">
+     跳转到新闻页</navigator>
+  </view>
+
+<image src="{{home}}" class="hidden_btn_index" bindtap="index">
+      回主页
+  </image>
+  <image src="{{next}}" class="hidden_btn" bindtap="next">
+      查看下一页
+  </image>
+  <image src="{{prev}}" class="hidden_btn_left" bindtap="prev">
+      查看上一页
+  </image>
+</view>

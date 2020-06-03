@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <!-- <view class="page-section-title">通过HTML String渲染</view> -->
+      <view class="page-content">
+        <!-- <scroll-view scroll-y>{{htmlSnip}}</scroll-view>
+        <button style="margin: 30rpx 0" type="primary" bindtap="renderHtml">渲染HTML</button> -->
+        <block wx:if="{{renderedByHtml}}">
+          <rich-text nodes="{{htmlSnip}}"></rich-text>
+        </block>
+      </view>
+    </view>
+
+  </view>
+  <image id="edit" src="{{edit}}" class="hidden_btn_index" bindtap="edit">
+      编辑
+  </image>
+
+<image id="home" src="{{home}}" class="hidden_btn_index" bindtap="index">
+      回主页
+  </image>
+  <!-- <img src="cloud://liubeibei-o5krp.6c69-liubeibei-o5krp-1302164922/o1XDd4tWZT8tMIYhCWTfYycG4Ek4/202050201812/image0.png"></img> -->
+
+</view>

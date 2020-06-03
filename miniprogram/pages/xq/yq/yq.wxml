@@ -1,0 +1,20 @@
+<page>
+  <view class="form_center">
+    <text>疫情查询</text>
+    <form bindsubmit="submit">
+      <view class="line">
+        <text>省份：</text>
+        <input name="province" value="天津市" />
+      </view>
+      <view class="line">
+        <text>城市：</text>
+        <input name="city" value="天津市" />
+      </view>
+      <view class="line">
+        <text>地区：</text>
+        <input name="district" value="西青区" />
+      </view>
+      <button form-type="submit">提交</button>
+    </form>
+  </view>
+</page>

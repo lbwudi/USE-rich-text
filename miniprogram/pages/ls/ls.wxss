@@ -1,0 +1,20 @@
+/* pages/ls/ls.wxss */
+.c1{
+  height: 250px
+}
+
+.c1 image{
+  width:100%;
+  height: 100%;
+  margin: 1px 10px;
+}
+
+.d_name text{
+  margin:15px auto;
+  font-size: 25px;
+	font-weight: 200px;
+}
+
+
+
+

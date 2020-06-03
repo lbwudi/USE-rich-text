@@ -1,0 +1,9 @@
+#edit{
+  margin: 5px;
+  right: 5px;
+}
+
+#home{
+  margin: 5px;
+  right:30px;
+}

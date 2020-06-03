@@ -1,0 +1,38 @@
+//首先从云端数据库中读取数据
+db.collection('flowsDetail').doc(options.id).get({
+        success: function (res) {
+          // res.data 包含该记录的数据
+          var timestamp = Date.parse(new Date());
+          let expiration = timestamp + 100000;
+          wx.setStorage({
+            key: 'flowDetail'+options.id,
+            data: res.data,
+          })
+          wx.setStorageSync("expiration_flowDetail" + options.id, expiration);
+
+        //得到要存入rich-text中的message.
+          var _message=res.data.message;
+          var img_index= _message.indexOf("img")
+          console.log(img_index);
+
+      //如果message中有img
+          if (img_index>-1){
+          //找到云端的src
+            var srcindex = _message.indexOf("cloud:");
+            var pngindex=_message.indexOf(".png");
+            var src = _message.substring(srcindex, pngindex+4);
+            console.log(src);
+         //使用wx提供的getTempFileURL的方法获取临时url
+            wx.cloud.getTempFileURL({
+              fileList: [src],
+              success: res => {
+                // 将原来message中的img的src 云端id转换为零时的fileId
+               // console.log(res.fileList[0].tempFileURL);
+                var  newMess = _message.replace(src, res.fileList[0].tempFileURL);
+                //设置message
+                _this.setData({ message: newMess});
+              },
+            })
+          }else{
+            console.log("没有img");
+          }

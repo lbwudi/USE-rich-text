@@ -1,0 +1,21 @@
+.line view{
+  margin: 3px auto;
+}
+
+image{
+  width: 200px;
+  height:130px;
+}
+
+
+.line{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto 30px;
+  background-color:rgb(241, 241, 134)
+}
+
+#bt{
+  font-size: 30px;
+  font-weight: 200;
+}
